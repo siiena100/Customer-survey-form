@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="heading">
+    <h1 id="title">Customer Survey Form</h1>
+    <p id="description">Thank you for your time to fill up this form.</p>
+    </div>
+    <div id="main">
+     <form id="survey-form">
+      <div id="input-fields">
+        <label id="name-label">Enter Your Name</label>
+        <input id="name" type="text" class="form" required placeholder="Full Name" /><br>
+        <br>
+        <label id="email-label">Enter Your Email</label><input id="email" type="email" class="form" required placeholder="abc@mail.com"/><br>
+        <br>
+        <label id="number-label">Enter Your Age</label><input id="number" type="number" class="form" min="5" max="100" placeholder="12+"/><label>
+        <br>
+      </div>
+      <div class="date-section">
+        <label for="visit-date">Date of Visit:</label>
+        <input type="date" id="visit-date" name="visit-date">
+      </div>
+      <div id="dropdown-div"><br>
+        <label id="dropdown-label">How would you rate the overall quality of the food?</label>
+        <select id="dropdown" name="food-rating" class="form">
+          <option value=" ">Select One</option>
+          <option value="1">Excellent</option>
+          <option value="2">Good</option>
+          <option value="3">Needs Improvement</option>
+        </select>
+      </div>
+      <div id="button-area"><br>
+        <label id="button-label">How would you rate the service of the staff?</label><br>
+        <div class="checkbox-group">
+        <input type="checkbox" name="Good" value="1">
+        <label for="good">Extremely Satisfied</label><br>
+        </div>
+        <div class="checkbox-group">
+        <input type="checkbox" name="Average" value="2">
+        <label for="average">Somewhat Satisfied</label><br>
+        </div>
+        <div class="checkbox-group">
+        <input type="checkbox" name="Poor" value="3">
+        <label for="poor">Not at all Satisfied</label><br>
+        </div>
+      </div>
+
+      <div id="radio-button"><br>
+        <label id="radio-label">Rate your overall dining experience</label><br>
+        <div class="radio-group">
+          <input type="radio" class="form" name="rating1" value="1">
+          <label for="rating1">1</label><br>
+        </div>
+        <div class="radio-group">
+          <input type="radio" class="form" name="rating2" value="2">
+          <label for="rating2">2</label><br>
+        </div>
+        <div class="radio-group">
+          <input type="radio" class="form" name="rating3" value="3">
+          <label for="rating3">3</label><br>
+        </div>
+        <div class="radio-group">
+          <input type="radio" class="form" name="rating4" value="4">
+          <label for="rating4">4</label><br>
+        </div>
+        <div class="radio-group">
+          <input type="radio" class="form" name="rating5" value="5">
+          <label for="rating5">5</label><br>
+        </div>
+      </div>
+      <div id="ending"><br>
+        <label id="comments-label">Would you like to share your feedback with us?</label><br>
+        <textarea class="form" placeholder="Your opinion matters to us..."></textarea><br>
+        <input id="submit" type="submit" class="form">
+      </div>
+     </form>
+    </div>
+  </body>
+ <script src="main.js"></script> 
+</html>
